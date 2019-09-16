@@ -1,0 +1,16 @@
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\bin\Debug\netstandard2.0\TravelRecordsApp.deps.json
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\bin\Debug\netstandard2.0\TravelRecordsApp.dll
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\bin\Debug\netstandard2.0\TravelRecordsApp.pdb
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\TravelRecordsApp.csproj.CoreCompileInputs.cache
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\TravelRecordsApp.AssemblyInfoInputs.cache
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\TravelRecordsApp.AssemblyInfo.cs
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\TravelRecordsApp.dll
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\TravelRecordsApp.pdb
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\Homepage.xaml.g.cs
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\HistoryPage.xaml.g.cs
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\MapPage.xaml.g.cs
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\TravelRecordsApp.csprojAssemblyReference.cache
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\NewTravelPage.xaml.g.cs
