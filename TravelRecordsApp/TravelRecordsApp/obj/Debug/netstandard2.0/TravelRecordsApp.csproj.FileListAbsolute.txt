@@ -14,3 +14,4 @@ C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\o
 C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
 C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\TravelRecordsApp.csprojAssemblyReference.cache
 C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\NewTravelPage.xaml.g.cs
+C:\Users\aaron\source\repos\TravelRecordsApp\TravelRecordsApp\TravelRecordsApp\obj\Debug\netstandard2.0\XamlC.stamp

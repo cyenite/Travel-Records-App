@@ -3,13 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps;assembly=Xamarin.forms.maps"
              mc:Ignorable="d"
              x:Class="TravelRecordsApp.MapPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Map Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="satellite" Text="Satellite" Clicked="Satellite_Clicked"/>
+        <ToolbarItem x:Name="hybrid" Text="Hybrid" Clicked="Hybrid_Clicked"/>
+        <ToolbarItem x:Name="street" Text="Street" Clicked="Street_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <maps:Map x:Name="locationMap"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand"
+              IsShowingUser="True"
+              MapType="Hybrid">
+        
+    </maps:Map>
+    
 </ContentPage>
