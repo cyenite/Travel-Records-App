@@ -29,27 +29,49 @@ namespace TravelRecordsApp
 
             var venues = await VenueLogic.GetVenues(position.Latitude, position.Longitude);
 
+            venueListView.ItemsSource = venues;
         }
 
         private void Save_Clicked(object sender, EventArgs e)
         {
-            Post post = new Post
+            try
             {
-                Experience = experienceEntry.Text
-            };
+                var selectedVenue = venueListView.SelectedItem as Venue;
+                var firstCategory = selectedVenue.categories.FirstOrDefault();
 
-            SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation);
-            conn.CreateTable<Post>();
-            int rows = conn.Insert(post);
-            conn.Close();
+                Post post = new Post
+                {
 
-            if (rows > 0)
-            {
-                DisplayAlert("Success","Succesfully added Experience!","Ok");
+                    Experience = experienceEntry.Text,
+                    CategoryID = firstCategory.id,
+                    CategoryName = firstCategory.name,
+                    Address = selectedVenue.location.address,
+                    Latitude = selectedVenue.location.lat,
+                    Longitude = selectedVenue.location.lng,
+                    VenueName = selectedVenue.name
+                };
+
+                SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation);
+                conn.CreateTable<Post>();
+                int rows = conn.Insert(post);
+                conn.Close();
+
+                if (rows > 0)
+                {
+                    DisplayAlert("Success", "Succesfully added Experience!", "Ok");
+                }
+                else
+                {
+                    DisplayAlert("Failed!", "Error adding Experience", "Ok");
+                }
             }
-            else
+            catch(NullReferenceException nref)
             {
-                DisplayAlert("Failed!","Error adding Experience","Ok");
+
+            }
+            catch(Exception ex)
+            {
+
             }
         }
     }

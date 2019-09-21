@@ -9,7 +9,6 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="satellite" Text="Satellite" Clicked="Satellite_Clicked"/>
-        <ToolbarItem x:Name="hybrid" Text="Hybrid" Clicked="Hybrid_Clicked"/>
         <ToolbarItem x:Name="street" Text="Street" Clicked="Street_Clicked"/>
     </ContentPage.ToolbarItems>
     
