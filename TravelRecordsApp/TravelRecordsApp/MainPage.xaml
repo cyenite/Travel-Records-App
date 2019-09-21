@@ -13,19 +13,22 @@
         <Entry
             x:Name="emailEntry"
             Placeholder="Email address"
-               Keyboard="Email"/>
+            Keyboard="Email">
+        </Entry>
+
         <Entry
             x:Name="passwordEntry"
             Placeholder="Password"
-               IsPassword="True"/>
+            IsPassword="True"
+            />
+        
         <Button 
             Margin="0,50,0,0"
             x:Name="buttonLogIn"
             Text="Log in"
             Clicked="ButtonLogIn_Clicked">
-            
-        </Button>
 
+        </Button>
 
     </StackLayout>
 

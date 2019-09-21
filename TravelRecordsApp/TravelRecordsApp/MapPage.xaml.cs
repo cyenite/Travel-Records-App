@@ -25,17 +25,17 @@ namespace TravelRecordsApp
 
         private void Satellite_Clicked(object sender, EventArgs e)
         {
-            
+            locationMap.MapType = Xamarin.Forms.Maps.MapType.Satellite;
         }
 
         private void Hybrid_Clicked(object sender, EventArgs e)
         {
-
+            locationMap.MapType = Xamarin.Forms.Maps.MapType.Hybrid;
         }
 
         private void Street_Clicked(object sender, EventArgs e)
         {
-
+            locationMap.MapType = Xamarin.Forms.Maps.MapType.Street;
         }
 
         protected async override void OnAppearing()
@@ -44,13 +44,15 @@ namespace TravelRecordsApp
 
             var locator = CrossGeolocator.Current;
             locator.PositionChanged += Locator_PositionChanged;
-        
+            bool listening = locator.IsListening;
 
-            await locator.StartListeningAsync(ts, 10);
-            var position = await locator.GetPositionAsync();
+            if (listening == false)
+            {
+                await locator.StartListeningAsync(ts, 10);
+                var position = await locator.GetPositionAsync();
+                locationMap.MoveToRegion(new Xamarin.Forms.Maps.MapSpan(new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude), 2, 2));
 
-            locationMap.MoveToRegion(new Xamarin.Forms.Maps.MapSpan(new Xamarin.Forms.Maps.Position(position.Latitude,position.Longitude),2,2));
-
+            }
         }
 
         private void Locator_PositionChanged(object sender, Plugin.Geolocator.Abstractions.PositionEventArgs e)

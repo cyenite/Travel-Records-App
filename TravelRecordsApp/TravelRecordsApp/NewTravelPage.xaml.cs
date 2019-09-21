@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using TravelRecordsApp.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Plugin.Geolocator;
+using TravelRecordsApp.Logic;
 
 namespace TravelRecordsApp
 {
@@ -16,6 +18,17 @@ namespace TravelRecordsApp
         public NewTravelPage()
         {
             InitializeComponent();
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            var locator = CrossGeolocator.Current;
+            var position = await locator.GetPositionAsync();
+
+            var venues = await VenueLogic.GetVenues(position.Latitude, position.Longitude);
+
         }
 
         private void Save_Clicked(object sender, EventArgs e)

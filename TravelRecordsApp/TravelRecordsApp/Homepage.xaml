@@ -9,7 +9,7 @@
     <TabbedPage.ToolbarItems>
         <ToolbarItem 
             x:Name="Add"
-            Text="Add"
+            Text="+"
             Clicked="Add_Clicked"/>
     </TabbedPage.ToolbarItems>
     
